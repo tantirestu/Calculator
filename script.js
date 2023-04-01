@@ -99,3 +99,25 @@ inputDecimal = (dot) =>{
     }
     currentNumber += dot
 }
+
+const percens = document.querySelector('.percentage')
+
+inputPercen = (percen) => {
+    if ( currentNumber === "0"){
+        return;
+    } else {
+        currentNumber += percen;
+    }
+}
+
+const percentage = percens.addEventListener('click', (event)=>{
+    if (currentNumber === "0"){
+        return;
+    } else if (!prevNumber) {
+        currentNumber = currentNumber / 100;
+        updateScreen(currentNumber)
+    } else {
+        currentNumber = currentNumber / 100;
+        updateScreen(currentNumber)
+    }
+})
