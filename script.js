@@ -56,13 +56,13 @@ const calculate = () =>{
         result = parseFloat (prevNumber) + parseFloat  (currentNumber);
         break;
         case '-':
-        result = parseFloat  (prevNumber) - pparseFloat  (currentNumber);
+        result = parseFloat  (prevNumber) - parseFloat  (currentNumber);
         break;
         case '*':
-        result =   (prevNumber) *   (currentNumber);
+        result =  parseFloat (prevNumber) *  parseFloat (currentNumber);
         break;
         case '/':
-        result =   (prevNumber) /   (currentNumber);
+        result =  parseFloat (prevNumber) /  parseFloat (currentNumber);
         break;
         default:
             return
