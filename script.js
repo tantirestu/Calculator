@@ -38,7 +38,7 @@ const inputOperator = (operator) => {
     if (calculationOperator === ''){
         prevNumber= currentNumber;
     }
-    calculationOperator=operator;
+    calculationOperator= operator;
     currentNumber= '0';
 }
 
